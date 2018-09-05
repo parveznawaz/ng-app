@@ -9,11 +9,11 @@
         <li><a class="nav-link" href="#" (click)="onSelect('shopping-list')">Shopping List</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right ml-auto">
-        <li class="dropdown open" appDropdown>
-          <a href="#" class="dropdown-toggle" role="button">Manage <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Saving Data</a></li>
-            <li><a href="#">Fetching Data</a></li>
+        <li class="d-inline-block" ngbDropdown>
+          <a href="#" class="dropdown-toggle" role="button" ngbDropdownToggle>Manage <span class="caret"></span></a>
+          <ul ngbDropdownMenu>
+            <li class="dropdown-item"><a href="#">Saving Data</a></li>
+            <li class="dropdown-item"><a href="#">Fetching Data</a></li>
           </ul>
         </li>
       </ul>
