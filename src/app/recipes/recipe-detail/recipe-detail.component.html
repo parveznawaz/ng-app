@@ -13,19 +13,15 @@
 </div>
 <div class="row">
   <div class="col-12">
-    <div class="btn-group" ngbDropdown>
-        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Manage Recipe</button>
-        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-          <button class="dropdown-item" (click)="onAddToShoppingList()">Add Ingredients</button>
-          <button class="dropdown-item">Edit Recipe</button>
-          <button class="dropdown-item">Delete Recipe</button>
-        </div>
-
-      <!-- <ul class="dropdown-menu">
-        <li class="dropdown-item"><a (click)="onAddToShoppingList()" style="cursor: pointer;">Add Ingredients</a></li>
-        <li class="dropdown-item"><a href="#">Edit Recipe</a></li>
-        <li class="dropdown-item"><a href="#">Delete Recipe</a></li>
-      </ul> -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Manage Recipe
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" (click)="onAddToShoppingList()">Add Ingredients</a>
+        <a class="dropdown-item">Edit Recipe</a>
+        <a class="dropdown-item">Delete Recipe</a>
+      </div>
     </div>
   </div>
 </div>
